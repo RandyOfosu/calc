@@ -7,12 +7,13 @@ body {
 }
 
 button {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; 
-  padding-left: 1.5rem;
-  padding-right: 1.5rem; 
-  border-radius: 0.25rem; 
-  border-bottom-width: 4px; 
+  font-size: x-large;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; 
+  padding-left: 3rem;
+  padding-right: 3rem; 
+  border-radius: 0.5rem; 
+  border-bottom-width: 8px; 
   border-color: #bdb4a5; 
   font-weight: 700; 
   color: #2C4C60; 
