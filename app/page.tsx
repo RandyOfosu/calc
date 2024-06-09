@@ -159,10 +159,10 @@ export default function Home() {
           </div>
 
             {/* Scherm */}
-          <div className="rounded-md w-full mb-5 p-8 bg-sky-950 text-white text-end text-7xl font-bold font-mono">
+          <div className="rounded-md w-full mb-5 p-8 bg-sky-950 text-white text-nowrap text-end text-7xl font-bold font-mono">
             <div className="output">
-              <div className="previous-operand">{ formatOperand(previousOperand) } { operation } </div>
-              <div className="current-operand">{ formatOperand(currentOperand) }</div>
+              <div className="previous-operand text-base text-slate-400 "> { formatOperand(previousOperand) } { operation } </div>
+              <div className="current-operand" contentEditable={true} data-text="0" >{ formatOperand(currentOperand) }</div>
             </div>
           </div>
           

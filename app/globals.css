@@ -25,3 +25,7 @@ button:hover {
   border-bottom-width: 0px;
   filter: brightness(120%);
 }
+
+[contentEditable=true]:empty:not(:focus):before {
+  content: attr(data-text)
+}
