@@ -164,7 +164,7 @@ export default function Home() {
           </div>
 
             {/* Scherm */}
-          <div className="rounded-md w-full mb-5 p-8 bg-sky-950 text-white text-nowrap text-end text-7xl font-bold font-mono">
+          <div className="2xl:p-8 2xl:text-7xl lg:p-6 lg:text-5xl p-4 rounded-md w-full mb-5  bg-sky-950 text-white text-nowrap text-end text-5xl font-bold font-mono">
             <div className="output">
               <div className="previous-operand text-base text-slate-400 "> { formatOperand(previousOperand) } { operation } </div>
               <div className="current-operand" contentEditable={true} data-text="0" >{ formatOperand(currentOperand) }</div>
@@ -189,14 +189,14 @@ export default function Home() {
             <DigitButton digit="3" dispatch={dispatch} />
             <OperationButton operation="÷" dispatch={dispatch} />
             {/* vierde rij */}
-            <button className="bg-orange-500 border-b-red-600 text-red-700/80" onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })} >
+            <button className="rounded-lg border-b-8 font-bold bg-orange-500 border-b-red-600 text-red-700/80" onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })} >
               DEL</button>
             <OperationButton operation="+" dispatch={dispatch} />
             <OperationButton operation="-" dispatch={dispatch} />
             <OperationButton operation="x" dispatch={dispatch} />
             {/* Onderste rij */}
-            <button className="col-span-2 col-start-1 col-end-3 grid-rows-subgrid row-start-5 bg-orange-500 border-b-red-600 text-red-700/80" onClick={() => dispatch({ type: ACTIONS.CLEAR })}>RESET</button>
-            <button className="col-span-2 col-start-3 col-end-5 grid-rows-subgrid row-start-5 bg-blue-600 border-b-blue-900 text-blue-950" onClick={() => dispatch({ type: ACTIONS.EVALUATE })}>=</button>
+            <button className="rounded-lg border-b-8 font-bold col-span-2 col-start-1 col-end-3 grid-rows-subgrid row-start-5 bg-orange-500 border-b-red-600 text-red-700/80" onClick={() => dispatch({ type: ACTIONS.CLEAR })}>RESET</button>
+            <button className="font-bold rounded-lg border-b-8 col-span-2 col-start-3 col-end-5 grid-rows-subgrid row-start-5 bg-blue-600 border-b-blue-900 text-blue-950" onClick={() => dispatch({ type: ACTIONS.EVALUATE })}>=</button>
           </div>
         </div>
       </div>
